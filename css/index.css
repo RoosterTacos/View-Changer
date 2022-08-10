@@ -1,0 +1,31 @@
+/* Keeps classes hidden */
+.hidden {
+    display: none;
+}
+
+.viewchanger {
+    height: 100vh;
+}
+
+/* NON LIBRARY SPECIFIC STYLES */
+nav li{
+    display: inline-block;
+    cursor: pointer;
+    
+}
+
+.home {
+    background: lightblue;
+}
+
+.about {
+    background: lightpink;
+}
+
+.contact {
+    background: lightgreen;
+}
+
+.news {
+    background: lightgray;
+}

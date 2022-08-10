@@ -1,0 +1,38 @@
+This library creates a simple view navigation system allowing to switch between different views as if 
+navigating to different pages.  Each "page" is simply contained in a div that is hidden until called.
+The 3 main features are:
+
+1. Hide / Show views by parsing the "viewchanger-" classes.
+
+2. Utilize browser navigation buttons to move forward and backward to previous views.
+
+3. Add various animation options to how the view changes are seen.
+
+
+Instructions
+----------------------------
+
+1. Each view must have a class that starts with "viewchanger" followed by a space and the name of the view/page.  Other classes can be added however these must be the first 2 in order for the library to function correctly.
+
+ie.  <div class="viewchanger home"> or <div class="viewchanger home home-page startpage">
+
+As long as the first 2 class names are "viewchanger" and the page name respectively. 
+
+2. All navigation bar links must exist and have a class of "vclink".  
+
+ie.     <ul>
+            <li class="vclink">Home</li>
+            <li class="vclink">About</li>
+            <li class="vclink">Contact</li>
+            <li class="vclink">News</li>
+        </ul>
+
+The links must follow the same order of the views on the page.  Therefore according to the nav bar above the views on the html file must be in the same order
+
+ie.     <div class="viewchanger home"></div>
+        <div class="viewchanger about"></div>
+        <div class="viewchanger contact"></div>
+        <div class="viewchanger news"></div>
+
+
+    
